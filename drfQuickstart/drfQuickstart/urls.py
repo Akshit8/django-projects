@@ -27,8 +27,8 @@ router.register(r'groups', views.GroupViewSet)
 
 
 urlpatterns = [
-    path('', include(router.urls)),
-    path('snippets/', include('snippets.urls')),
+    path('', include('snippets.urls')),
+    # path('quickstart/', include(router.urls)),
     path('admin/', admin.site.urls),
     path(
         'auth/',

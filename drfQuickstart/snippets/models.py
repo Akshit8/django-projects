@@ -25,7 +25,7 @@ class Snippet(models.Model):
     class Meta:
         ordering = ['created']
 
-    # like pre-commit hook
+    # like pre-save hook
     def save(self, *args, **kwargs):
         '''
         Use the `pygments` library to create a highlighted HTML
